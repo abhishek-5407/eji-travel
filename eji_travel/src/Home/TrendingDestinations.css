@@ -1,0 +1,147 @@
+.trending-section {
+  padding: 80px 0;
+  background: #fafafa;
+}
+
+/* Heading */
+.section-tag {
+  color: #ff7a00;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.section-subtitle {
+  max-width: 720px;
+  margin: 12px auto 0;
+  font-size: 15px;
+  color: #6c757d;
+}
+
+/* Card */
+.package-card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+.package-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.img-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-box img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.package-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Badge */
+.package-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #2e2e2e;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+/* Content */
+.package-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.package-desc {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* Price */
+.price-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+.old-price {
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* Footer Buttons */
+.package-footer {
+  display: flex;
+  gap: 10px;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+
+.call-btn {
+  background: #fff;
+  color: #ff7a00;
+  border: 1px solid #ff7a00;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.call-btn:hover {
+  background: #ff7a00;
+  color: #fff;
+}
+
+.book-btn {
+  flex: 1;
+  background: linear-gradient(135deg, #ff7a00, #ff9f45);
+  border: none;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+  background: linear-gradient(135deg, #ff9f45, #ff7a00);
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 26px;
+  }
+
+  .img-box img {
+    height: 210px;
+  }
+}

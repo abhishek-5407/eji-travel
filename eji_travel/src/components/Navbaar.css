@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.custom-navbar {
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* DESKTOP STYLES (lg and up) */
+.nav-links-wrapper .nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin: 0 12px;
+    padding: 8px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links-wrapper .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.nav-links-wrapper .nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-links-wrapper .nav-link:hover {
+    color: #007bff !important;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 10px !important;
+}
+
+.expert-box {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    border-left: 2px solid #e9ecef;
+    padding-left: 20px;
+}
+
+.expert-label { font-size: 0.7rem; text-transform: uppercase; font-weight: 700; color: #888; letter-spacing: 1px; }
+.expert-number { font-size: 1.05rem; font-weight: 700; color: #007bff; text-decoration: none; }
+
+/* TABLET & MOBILE STYLES (lg and below) */
+@media (max-width: 991.98px) {
+    /* Force links to start from the left */
+    .nav-links-wrapper {
+        text-align: left !important;
+        margin-left: 0 !important;
+        padding: 20px 0 10px 0;
+    }
+
+    /* Make links block-level so they don't sit side-by-side on tablets */
+    .nav-links-wrapper .nav-link {
+        margin: 5px 0;
+        padding: 10px 0;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #f8f9fa; /* Optional: adds separation */
+    }
+
+    /* Align dropdown caret arrow to the right of the text */
+    .dropdown-toggle {
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-start; /* Keeps text left */
+    }
+
+    /* Ensure the arrow has a little space from the text */
+    .dropdown-toggle::after {
+        margin-left: 10px !important;
+        vertical-align: middle !important;
+    }
+
+    /* Sub-menu items padding for nested look */
+    .dropdown-menu {
+        box-shadow: none;
+        padding-left: 15px;
+        margin-top: 0 !important;
+        background: #fcfcfc;
+    }
+
+    /* Expert Section - Left Aligned */
+    .expert-box {
+        border-left: none;
+        border-top: 1px solid #eee;
+        padding-top: 15px;
+        padding-left: 0;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    /* Disable the hover underline effect on mobile for cleaner UI */
+    .nav-links-wrapper .nav-link::after {
+        display: none;
+    }
+}
+
+/* Medium Desktop Spacing Fix */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .nav-links-wrapper .nav-link {
+        margin: 0 6px;
+        font-size: 0.85rem;
+    }
+}

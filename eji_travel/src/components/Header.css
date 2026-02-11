@@ -1,0 +1,46 @@
+/* REMOVE default browser spacing */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.top-header {
+  width: 100%;
+  background-color: #0b1c2d;
+  font-size: 14px;
+}
+
+/* Quote link */
+.quote-link {
+  color: #ff9f43;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.quote-link:hover {
+  text-decoration: underline;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.social-icons svg {
+  color: white;       /* ICONS WHITE */
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-icons svg:hover {
+  color: #ff9f43;
+}
+
+/* Mobile & Tablet fix */
+@media (max-width: 991px) {
+  .top-header {
+    text-align: center;
+  }
+}

@@ -1,0 +1,82 @@
+.continents-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+/* Heading */
+.section-tag {
+  color: #ff7a00;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.section-title span {
+  color: #ff7a00;
+}
+
+.section-desc {
+  color: #6c757d;
+  font-size: 15px;
+  max-width: 520px;
+}
+
+/* Card */
+.continent-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.continent-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.continent-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0)
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 18px;
+}
+
+.overlay h5 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .continent-card img {
+    min-height: 200px;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "cd eji_travel && npm run dev",
+    "build": "cd eji_travel && npm run build",
+    "lint": "cd eji_travel && npm run lint",
+    "preview": "cd eji_travel && npm run preview"
+  },
+  "dependencies": {
+    "react-icons": "^5.5.0"
+  }
+}

@@ -1,0 +1,108 @@
+/* Footer Container Styling */
+.footer-section {
+    background: linear-gradient(180deg, #0a141d 0%, #050a0f 100%);
+    color: #ffffff;
+    padding: 60px 0 20px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Company Info Section */
+.footer-description {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 20px;
+    max-width: 350px;
+}
+
+.social-links h6 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 25px;
+}
+
+/* Rounded Social Icons matching image */
+.social-icon {
+    background-color: #f39c12; /* Brand orange color */
+    color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    background-color: #e67e22;
+    color: white;
+}
+
+/* Headings */
+.footer-heading {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+/* Navigation Links */
+.footer-nav .nav-link {
+    color: #ffffff !important;
+    padding: 8px 0 !important;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.footer-nav .nav-link:hover {
+    color: #f39c12 !important;
+    padding-left: 5px !important;
+}
+
+/* Contact & Map Section */
+.address-text {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.map-container {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Bottom Bar */
+.footer-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 40px 0 20px 0;
+}
+
+.copyright-text {
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .footer-col {
+        text-align: left;
+    }
+    .footer-description {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-section {
+        padding-top: 40px;
+    }
+    .footer-heading {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+}

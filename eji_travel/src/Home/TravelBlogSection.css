@@ -1,0 +1,98 @@
+.travel-blog-section {
+  padding: 80px 0;
+  background: #fafafa;
+}
+
+/* Heading */
+.section-tag {
+  color: #ff7a00;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.section-subtitle {
+  max-width: 700px;
+  margin: 10px auto 0;
+  color: #6c757d;
+  font-size: 15px;
+}
+
+/* Card */
+.blog-card {
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.img-wrapper {
+  overflow: hidden;
+}
+
+.blog-card img {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.blog-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Content */
+.blog-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.blog-desc {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.read-more {
+  color: #ff7a00;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #6c757d;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 26px;
+  }
+
+  .blog-card img {
+    height: 200px;
+  }
+}
